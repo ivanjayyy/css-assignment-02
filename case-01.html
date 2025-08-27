@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="lib/normalize.css">
+
+    <style>
+
+        .main-div {
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+
+        #div1 {
+            background-color: red;
+        }
+
+        #div2 {
+            background-color: green;
+            right: 0;
+        }
+
+        #div3 {
+            background-color: gold;
+            bottom: 0;
+        }
+
+        #div4 {
+            background-color: purple;
+            right: 0;
+            bottom: 0;
+        }
+
+        .main-div > div {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .main-div > div > div {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        #middle-div {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        #middle-div > div {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .corner-div {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            position: absolute;
+            /*border-radius: 100%;*/
+        }
+
+        #corner1 {
+            border-bottom-right-radius: 100%;
+        }
+
+        #corner2 {
+            right: 0;
+            border-bottom-left-radius: 100%;
+        }
+
+        #corner3 {
+            bottom: 0;
+            border-top-right-radius: 100%;
+        }
+
+        #corner4 {
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 100%;
+        }
+
+        .mid-div {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #mid1 {
+            top: -50px;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+        }
+
+        #mid2 {
+            bottom: -50px;
+            border-top-left-radius: 100%;
+            border-top-right-radius: 100%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="div1" class="main-div">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div id="div2" class="main-div">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div id="div3" class="main-div">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div id="div4" class="main-div">
+    <div>
+        <div></div>
+    </div>
+</div>
+
+<div id="middle-div">
+    <div></div>
+</div>
+
+<div id="corner1" class="corner-div"></div>
+<div id="corner2" class="corner-div"></div>
+<div id="corner3" class="corner-div"></div>
+<div id="corner4" class="corner-div"></div>
+
+<div id="mid1" class="mid-div"></div>
+<div id="mid2" class="mid-div"></div>
+
+</body>
+</html>
