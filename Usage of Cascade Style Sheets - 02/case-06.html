@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #background{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-image: url("../images/sky.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #road {
+            position: absolute;
+            bottom:0;
+            left:0;
+
+            animation: slide 3s infinite;
+        }
+
+        #city {
+            position: absolute;
+            bottom:300px;
+            width:200%;
+
+            animation: slide 3s infinite;
+        }
+        
+        @keyframes  slide{
+            0% {
+                margin-left: -2000px;
+            }
+
+            100% {
+                margin-left: 0;
+            }
+            
+        }
+
+        #car {
+            position: absolute;
+            bottom:200px;
+            left:1000px;
+            transform: rotateY(180deg);
+        }
+
+        .wheels {
+            position: absolute;
+            bottom:150px;
+
+            animation: rotate 3s infinite;
+        }
+
+        #wheel1 {
+            left: 1100px;
+        }
+
+        #wheel2 {
+            right: 920px;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <dic id="background">
+    </dic>
+
+    <img id="city" src="../images/city.png">
+    <img id="road" src="../images/road.jpg">
+
+    <img id="car" src="../images/car.png">
+
+    <img id="wheel1" class="wheels" src="../images/wheel.png">
+    <img id="wheel2" class="wheels" src="../images/wheel.png">
+
+</body>
+</html>
